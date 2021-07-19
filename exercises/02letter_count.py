@@ -6,7 +6,7 @@
 #
 # for letter in "alpha":
 #   print(letter)
-#
+
 # Create a dictionary with `dd = {}`. Assign values with `dd["foo"] = 1`.
 # Check to see if a dictionary has a key using the `in` operator.
 #
@@ -15,7 +15,7 @@
 # dd["foo"] += 1
 # if "foo" in dd:
 #   print(dd["foo"])
-#
+# #
 # Careful. Python requires that you insert a key into a dictionary
 # before you try to modify it's value. If you try to access a dictionary
 # at a key that hasn't been added you'll get an error and the program will
@@ -31,3 +31,27 @@
 # letter_count('banana')
 #
 # > {'a': 3, 'b': 1, 'n': 3}
+
+
+def letter_count():
+  a = "banana"
+  print(len(a))
+
+letter_count()
+
+
+
+
+def lettercount(word):
+  dd = {}
+  for a in word:
+    if a not in dd:
+      dd[a] = 1
+    else:
+      dd[a] += 1
+  return dd
+
+string = lettercount('banana')
+
+print(string)
+

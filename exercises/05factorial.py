@@ -9,3 +9,18 @@
 #
 # > 120
 #
+
+def factorial(n):
+  if n is None or type(n) is not int or n < 0:
+   print('invalid value for n')
+   return -1
+   
+  total = 1
+
+  for i in range(1, n+1):
+    total *= i
+
+  print(total)
+
+factorial(5)
+
